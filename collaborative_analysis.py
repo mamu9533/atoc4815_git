@@ -1,9 +1,5 @@
 """
-<<<<<<< HEAD
 Collaborative Weather Analysis: edited on main
-=======
-Collaborative Weather Analysis -- edited on conflict-test
->>>>>>> conflict-test
 ATOC 4815/5815 - Git Collaboration Exercise
 
 Instructions:
@@ -24,6 +20,9 @@ The main() function calls everything and prints a full weather report.
 # SECTION A  --  Partner A: Temperature Analysis
 # ============================================================
 
+def new_function():
+    return "hello"
+
 def fahrenheit_to_celsius(temp_f):
     """Convert a temperature from Fahrenheit to Celsius.
 
@@ -41,7 +40,6 @@ def fahrenheit_to_celsius(temp_f):
     """
     # TODO (Partner A): implement the conversion
     pass
-
 
 def celsius_to_fahrenheit(temp_c):
     """Convert a temperature from Celsius to Fahrenheit.
