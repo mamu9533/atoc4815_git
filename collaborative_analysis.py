@@ -40,7 +40,8 @@ def fahrenheit_to_celsius(temp_f):
         Temperature in Celsius.
     """
     # TODO (Partner A): implement the conversion
-    pass
+    C = (temp_f - 32) *(5/9)
+    return C
 
 
 def celsius_to_fahrenheit(temp_c):
@@ -59,7 +60,8 @@ def celsius_to_fahrenheit(temp_c):
         Temperature in Fahrenheit.
     """
     # TODO (Partner A): implement the conversion
-    pass
+    F = (temp_c)*(9/5) + 32
+    return F
 
 
 def daily_temp_range(high_f, low_f):
@@ -78,8 +80,9 @@ def daily_temp_range(high_f, low_f):
         {"range_f": float, "range_c": float}
     """
     # TODO (Partner A): compute range in F and convert to C
-    pass
-
+    range_f = high_f - low_f
+    range_c = fahrenheit_to_celsius(high_f) - fahrenheit_to_celsius(low_f)
+    return {"range_f":range_f, "range_c":range_c}
 
 # ============================================================
 # SECTION B  --  Partner B: Wind Chill & Heat Index
