@@ -63,7 +63,6 @@ def max_temperature(data):
     result = None
     return result
 
-
 def min_temperature(data):
     """Find the lowest temperature recorded in January.
 
