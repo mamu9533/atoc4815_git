@@ -98,6 +98,12 @@ def wind_chill(temp_f, wind_mph):
     """
     # TODO (Partner B): implement the NWS wind chill formula
     # Return None if temp_f > 50 or wind_mph < 3
+
+    WC = 35.74 + 0.6215*temp_f - 35.75*(wind_mph^0.16) + 0.4275*temp_f*(wind_mph^0.16)
+    if temp_f > 50 or wind_mph < 3:
+        return "None"
+    else:
+        return WC    
     pass
 
 
